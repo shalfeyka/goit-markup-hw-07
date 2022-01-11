@@ -660,18 +660,22 @@ img {
     line-height: 1.16;
     letter-spacing: 0.01em;
 }
+.label-modal:hover,
+.label-modal:focus {
+    fill: var(--hover-collor-text);
+}
 .comment-area:hover 
 .comment-area:focus {
     fill: var(--hover-collor-text);
 }
-.input-modal:hover + .modal-icon,
+/*.input-modal:hover + .modal-icon,
 .input-modal:focus + .modal-icon {
     fill: var(--hover-collor-text);
 }
 .input-modal:hover,
 .input-modal:focus {
     border: 1px solid var(--hover-collor-text);
-}
+}*/
 .comment-area {
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
@@ -731,25 +735,27 @@ img {
 .button-modal:focus {
     background-color: #188CE8;
 }
-.square-image {
-    margin-right: 7px;
-    fill: var(--color-text);
-    border-radius: 2px;
-    background-size: contain;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: var(--timing-function);
-    top: 15px;
-    left: 12px;
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    overflow: hidden;
-    border: 0;
-    clip: rect(0 0 0 0);
-}
 
+.icon-modal {
+    outline: 2px solid black;
+    margin-right: 8px;
+    border-radius: 2px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+.checkbox {
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+}
+.checkbox:checked + .icon-modal {
+    background-color: #2196F3;
+    background-image: url('../images/icon\ check\ modal.svg');
+    background-size: contain;
+    background-origin: border-box;
+    border-color: #2196F3;
+}
 /*portfolio*/
 
 /*Main information*/
