@@ -685,22 +685,14 @@ img {
     line-height: 1.16;
     letter-spacing: 0.01em;
 }
-.feedback__label:hover,
-.feedback__label:focus {
+.feedback__input:focus + .feedback__icon {
     fill: var(--hover-collor-text);
 }
+
 .feedback__comment-area:hover 
 .feedback__comment-area:focus {
     fill: var(--hover-collor-text);
 }
-/*.input-modal:hover + .modal-icon,
-.input-modal:focus + .modal-icon {
-    fill: var(--hover-collor-text);
-}
-.input-modal:hover,
-.input-modal:focus {
-    border: 1px solid var(--hover-collor-text);
-}*/
 .feedback__comment-area {
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
