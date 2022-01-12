@@ -600,7 +600,7 @@ img {
     color: var(--hover-collor-text);
 }
 .subscribe {
-    margin-left: 93px;
+    margin-left: auto;
 }
 .subscribe__title {
     color: var(--title-color);
@@ -688,8 +688,14 @@ img {
 .feedback__input:focus + .feedback__icon {
     fill: var(--hover-collor-text);
 }
-
-.feedback__comment-area:hover 
+.feedback__input:focus {
+    border: 1px solid var(--hover-collor-text);
+    outline: none;
+} 
+.feedback__comment-area:focus {
+    border: 1px solid var(--hover-collor-text);
+    outline: none;
+}
 .feedback__comment-area:focus {
     fill: var(--hover-collor-text);
 }
