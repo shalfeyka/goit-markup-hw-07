@@ -2,6 +2,10 @@
     background-color: $title-color;
     border-bottom: 1px solid #ECECEC;
 }
+.header__container {
+    display: flex;
+    align-items: center;
+}
 .header__logo {
     color: $hover-collor-text;
     font-family: Raleway;
@@ -72,16 +76,16 @@
      padding-top: 32px;
      padding-bottom: 32px;
      text-decoration: none;
-     color: var(--color-text);
-     transition: color 250ms var(--timing-function);
+     color: $color-text;
+     transition: color 250ms $timing-function;
      
  }
  .navigate__link:hover,
- .navigate__linkk:focus {
-    color: var(--hover-collor-text);
+ .navigate__link:focus {
+    color: $hover-collor-text;
  } 
  .navigate__link.current {
-     color: var(--hover-collor-text);
+     color: $hover-collor-text;
      position: relative;
  }
  .navigate__list:last-child {
@@ -93,21 +97,9 @@
    
 }
 .contacts-list__icon:hover {
-    color: var(--hover-collor-text);
+    color: $hover-collor-text;
 }
-.advantages__container {
-    display: flex;
-    height: 120px;
-    border-radius: 4px;
-    margin-bottom: 30px;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--background-team);
-}
-.advantages__icon {
-    width: 70px;
-    height: 70px;
-}
+
 .contacts-list {
     list-style-type: none;
     display: flex;
@@ -118,7 +110,7 @@
 .contacts-list__link {
     display: flex;
     align-items: center;
-    color: var(--color-text-header);
+    color: $color-text-header;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -128,42 +120,11 @@
     text-decoration: none;
     padding-top: 32px;
     padding-bottom: 32px; 
-    transition: color 250ms var(--timing-function);
+    transition: color 250ms $timing-function;
 }
 .contacts-list__link:hover,
 .contacts-list__link:focus {
-    color: var(--hover-collor-text);
-}
-.social-network__item {
-    margin-right: 10px;
-}
-.social-network {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 16px;
-}
-
-.social-network__item:last-child {
-    margin-right: 0;
-}
-.social-network__icon {
-    fill: currentColor;
-}
-.social-network__links {
-    width: 44px;
-    height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    color: var(--logo-clients);
-    transition: background-color 250ms var(--timing-function);
-}
-.social-network__links:hover,
-.social-network__links:focus {
-    background-color: var(--hover-collor-text);
-    color:  var(--title-color);
+    color: $hover-collor-text;
 }
 
  .contacts-list__item {
@@ -172,7 +133,4 @@
  }
  .contacts-list__item:last-child {
     margin-right: 0;
- }
- .container-header-nav {
-     display: flex;
  }
