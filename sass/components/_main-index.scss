@@ -43,12 +43,14 @@
     padding-left: 32px;
     border: transparent;
     border-radius: 4px;
+
+    &:hover, 
+    :focus {
+        background: #2196F3;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
 }
-.main-section__button:hover, 
-.main-section__button:focus {
-    background: #2196F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
+
 .section__hide {
     position: absolute;
     width: 1px;
@@ -84,19 +86,22 @@
     letter-spacing: 0.03em;
     margin-bottom: 10px;
     text-transform: uppercase;
-}
-.advantages__title:last-child {
-    margin-right: 0;
+
+    &:last-child {
+        margin-right: 0;
+    }
 }
 .advantages__text {
     color: $color-text-header;
     font-size: 14px;
     line-height: 1.71;
     margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0;
+    }
 }
-.advantages__text:last-child {
-    margin-right: 0;
-}
+
 .work-section {
     padding-top: 0;
 }
@@ -158,10 +163,12 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background-color: $title-color;
+
+    &:last-child {
+        margin-right: 0;
+    }
 }
-.team__item:last-child {
-    margin-right: 0;
-}
+
 .team-container {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -190,10 +197,12 @@
 }
 .social-network__item {
     margin-right: 10px;
+
+    &:last-child {
+        margin-right: 0;
+    }
 }
-.social-network__item:last-child {
-    margin-right: 0;
-}
+
 .social-network__links {
     width: 44px;
     height: 44px;
@@ -203,11 +212,12 @@
     border-radius: 50%;
     color: $logo-clients;
     transition: background-color 250ms $timing-function;
-}
-.social-network__links:hover,
-.social-network__links:focus {
-    background-color: $hover-collor-text;
-    color:  $title-color;
+
+    &:hover,
+    :focus {
+        background-color: $hover-collor-text;
+        color:  $title-color;
+    }
 }
 .social-network__icon {
     fill: currentColor;

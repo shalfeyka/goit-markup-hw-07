@@ -28,10 +28,12 @@
     position: absolute;
     fill: currentColor;
     background-color: $title-color;
+
+    &:hover {
+        color: $hover-collor-text;
+    }
 }
-.modal__button-close:hover {
-    color: $hover-collor-text;
-}
+
 .modal__title {
     color: $color-text;
     font-weight: 700;
@@ -68,12 +70,13 @@
     padding-left: 42px;
     padding-top: 12px;
     padding-bottom: 12px;
+
+    &:focus {
+        border: 1px solid $hover-collor-text;
+        outline: none;
+    } 
 }
 
-.feedback__input:focus {
-    border: 1px solid $hover-collor-text;
-    outline: none;
-} 
 .feedback__icon {
     position: absolute;
     top: 30px;
@@ -99,12 +102,14 @@
     padding: 12px 16px;
     resize: none;
     margin-top: 4px;
+
+    &:focus {
+        border: 1px solid $hover-collor-text;
+        outline: none;
+        fill: $hover-collor-text;
+    }
 }
-.feedback__comment-area:focus {
-    border: 1px solid $hover-collor-text;
-    outline: none;
-    fill: $hover-collor-text;
-}
+
 .terms__label {
     display: flex;
     align-items: center;
@@ -157,8 +162,9 @@
     border: transparent;
     transition: background-color 250ms $timing-function;
     cursor: pointer;
-}
-.send-form__button:hover,
-.send-form__button:focus {
-    background-color: #188CE8;
+
+    &:hover,
+    :focus {
+        background-color: #188CE8;
+    }
 }

@@ -14,10 +14,12 @@
     width: 170px;
     height: 92px;
     margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0;
+    }
 }
-.clients__item:last-child {
-    margin-right: 0;
-}
+
 .clients__link {
     display: flex;
     border: 1px solid #AFB1B8;
@@ -28,13 +30,14 @@
     align-items: center;
     color: $logo-clients;
     transition: color 250ms $timing-function;
-}
 
-.clients__link:hover, 
-.clients__link:focus {
+    &:hover, 
+    :focus {
     border-color: $hover-collor-text;
     color: $hover-collor-text;
 }
+}
+
 .clients__icon {
     fill: currentColor;
 }
@@ -42,7 +45,8 @@
     width: 170px;
     height: 92px;
     margin-right: 30px;
-}
-.clients__item:last-child {
-    margin-right: 0;
+
+    &:last-child {
+        margin-right: 0;
+    }
 }
