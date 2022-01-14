@@ -482,6 +482,7 @@ img {
 }
 .adress__list {
     margin-top: 20px;
+    margin-bottom: 60px;
 }
 .adress__location {
     color: var(--title-color);
@@ -502,9 +503,7 @@ img {
     text-decoration: none;
     transition: color 250ms var(--timing-function);
 }
-.adress__list {
-    margin-bottom: 60px;
-}
+
 .adress__link:hover {
     color: var(--hover-collor-text); 
 }
@@ -695,10 +694,9 @@ img {
 .feedback__comment-area:focus {
     border: 1px solid var(--hover-collor-text);
     outline: none;
-}
-.feedback__comment-area:focus {
     fill: var(--hover-collor-text);
 }
+
 .feedback__comment-area {
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
@@ -762,7 +760,7 @@ img {
 }
 
 .terms__icon {
-    outline: 2px solid black;
+    border: 2px solid black;
     margin-right: 8px;
     border-radius: 2px;
     width: 15px;

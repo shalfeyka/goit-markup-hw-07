@@ -6,30 +6,7 @@
     display: flex;
     align-items: center;
 }
-.header__logo {
-    color: $hover-collor-text;
-    font-family: Raleway;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.14;
-    text-decoration: none;
-    letter-spacing: 0.03em;
-    margin-right: 93px;
-}
-.header__logo-half {
-    color: $color-text;
-    font-family: Raleway;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.14;
-    text-decoration: none;
-}
- /*Navigation*/
- ul {
-     margin: 0;
-     padding: 0;
-     list-style: none;
- }
+
  .navigate-list {
     color: $color-text;
     font-family: Roboto;
