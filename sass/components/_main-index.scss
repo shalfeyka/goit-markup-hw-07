@@ -91,6 +91,13 @@
         margin-right: 0;
     }
 }
+.advantages__item {
+    margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
 .advantages__text {
     color: $color-text-header;
     font-size: 14px;
