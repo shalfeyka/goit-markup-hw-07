@@ -25,7 +25,8 @@
     letter-spacing: 0.03em;
     transition: color 250ms $timing-function;
 
-    &:hover {
+    &:hover,
+    &:focus {
         color: $hover-collor-text;
     }
 }
@@ -38,7 +39,8 @@
     text-decoration: none;
     transition: color 250ms $timing-function;
 
-    &:hover {
+    &:hover,
+    &:focus {
         color: $hover-collor-text; 
     }
 }
@@ -75,7 +77,7 @@
     transition: background-color 250ms $timing-function;
 
     &:hover,
-    :focus {
+    &:focus {
         background-color: $hover-collor-text;
     }
 }

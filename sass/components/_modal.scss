@@ -29,7 +29,8 @@
     fill: currentColor;
     background-color: $title-color;
 
-    &:hover {
+    &:hover,
+    &:focus {
         color: $hover-collor-text;
     }
 }
@@ -164,7 +165,7 @@
     cursor: pointer;
 
     &:hover,
-    :focus {
+    &:focus {
         background-color: #188CE8;
     }
 }

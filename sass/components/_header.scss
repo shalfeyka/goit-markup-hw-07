@@ -52,6 +52,7 @@
     &:last-child {
         margin-right: 0;
 }
+}
  .navigate__link {
      padding-top: 32px;
      padding-bottom: 32px;
@@ -59,12 +60,11 @@
      color: $color-text;
      transition: color 250ms $timing-function;
 
-     &:hover {
-        color: $hover-collor-text;
-     }
+     &:hover,
      &:focus {
         color: $hover-collor-text;
      }
+     
      &.current {
         color: $hover-collor-text;
         position: relative;
@@ -108,12 +108,12 @@
     &:focus {
     color: $hover-collor-text;
 }
+}
 
  .contacts-list__item {
     margin-right: 50px;
 
     &:last-child {
         margin-right: 0;
-     }
-  
- }
+        }
+}                  

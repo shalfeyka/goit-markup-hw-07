@@ -1,4 +1,4 @@
-.header__logo {
+.logo {
     color: $hover-collor-text;
     font-family: Raleway;
     font-weight: 700;
@@ -8,7 +8,7 @@
     letter-spacing: 0.03em;
     margin-right: 93px;
 }
-.header__logo-half {
+.logo__dark {
     color: $color-text;
     font-family: Raleway;
     font-weight: 700;
@@ -19,8 +19,16 @@
 .logo {
     color: $hover-collor-text;
     font-family: Raleway;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1,19;
 }
 .logo__half {
     color: $title-color;
     font-family: Raleway;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1,19;
 }
